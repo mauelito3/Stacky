@@ -1,10 +1,10 @@
 import Button from "../components/Button";
 
-function Results({ finished, result }) {
+function Results({ finished, result, restart }) {
   if (!finished) return null;
 
   const replay = () => {
-    
+    restart()
   };
 
   return (

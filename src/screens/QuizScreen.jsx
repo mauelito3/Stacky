@@ -18,7 +18,7 @@ function QuizScreen() {
     <>
       <Logo size={50} top={30} tag={false} fs={30} />
 
-      <Results finished={finished} result={getResult()} />
+      <Results finished={finished} result={getResult()} restart={restart} />
       <div className="quizarea">
         {/* current question indicator */}
         <div className="currentQuest">
