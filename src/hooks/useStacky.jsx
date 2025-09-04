@@ -10,6 +10,22 @@ export function useStacky(questions) {
 
   const [finished, setFinished] = useState(false);
 
+
+  // submit answer handler
+  const handleAnswer = (points) => {
+    setScores((prev) => ({
+      frontend: prev.frontend + (points.frontend || 0),
+      backend: prev.backend + (points.backend || 0),
+      fullstack: prev.fullstack + (points.fullstack || 0),
+    }));
+
+    if (currentQ + 1 < questions.length) {
+      setCurrentQ(currentQ + 1);
+    } else {
+      setFinished(true);
+    }
+  };
+
   const restart = () => {
     setCurrentQ(0);
     setScores({ frontend: 0, backend: 0, fullstack: 0 });
