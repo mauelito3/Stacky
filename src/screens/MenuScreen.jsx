@@ -4,19 +4,24 @@ import Footer from "../components/Footer";
 import Button from "../components/Button";
 
 function MenuScreen({ starter }) {
-  const btnsStyle = {
-    width: 400,
-    maxWidth: "90dvw",
-    margin: "auto",
-    marginTop: 50,
-  };
   return (
     <>
-      <Logo size={140} top={200} tag={false} fs={50} />
+      <div className="menuscreen">
+        <div className="content">
+          <div className="stacky" style={{ width: 160, height: 160 }}></div>
 
-      <div style={btnsStyle}>
-        <Button text={"Let's Play"} callback={starter} />
+          <div className="script">
+            Hi, I'm <strong>Stacky</strong>
+          </div>
+
+          <span>I’ll help you decide which role is perfect for you.</span>
+
+          <div className="playbtn">
+            <Button text={"Let's Play"} callback={starter} />
+          </div>
+        </div>
       </div>
+
       <Footer />
     </>
   );

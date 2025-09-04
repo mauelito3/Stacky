@@ -16,7 +16,7 @@ function QuizScreen() {
 
   return (
     <>
-      <Logo size={50} top={30} tag={false} fs={30} />
+      <Logo size={70} top={10} tag={false} fs={30} />
 
       <Results finished={finished} result={getResult()} restart={restart} />
       <div className="quizarea">
