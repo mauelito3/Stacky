@@ -2,7 +2,7 @@
 import Footer from "../components/Footer";
 import Results from "../components/Results";
 import Logo from "./../components/Logo";
-
+import ProgressBar from "../components/ProgressBar";
 import { questions } from "./../data/questions";
 
 // hooks
@@ -20,6 +20,7 @@ function QuizScreen() {
 
       <Results finished={finished} result={getResult()} restart={restart} message={getMessage()}/>
       <div className="quizarea">
+        <ProgressBar current={currentQ + 1} total={questions.length} />
         {/* current question indicator */}
         <div className="currentQuest">
           Question {currentQ + 1} of {questions.length}
