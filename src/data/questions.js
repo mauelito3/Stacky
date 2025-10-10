@@ -89,8 +89,6 @@ export const questions = [
         { answer: "I'm excited by the challenge of building for both.", points: { fullstack: 2, mobile: 1 } },
     ],
   },
-
-  // --- New Questions ---
   {
     id: 11,
     text: "When you encounter a bug, what's your first instinct?",
