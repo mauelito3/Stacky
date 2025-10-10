@@ -9,7 +9,7 @@ import { questions } from "./../data/questions";
 import { useStacky } from "./../hooks/useStacky";
 
 function QuizScreen() {
-  const { currentQ, scores, finished, handleAnswer, restart, getResult } =
+  const { currentQ, scores, finished, handleAnswer, restart, getResult, getMessage } =
     useStacky(questions);
 
   const q = questions[currentQ];
@@ -18,7 +18,7 @@ function QuizScreen() {
     <>
       <Logo size={70} top={10} tag={false} fs={30} />
 
-      <Results finished={finished} result={getResult()} restart={restart} />
+      <Results finished={finished} result={getResult()} restart={restart} message={getMessage()}/>
       <div className="quizarea">
         {/* current question indicator */}
         <div className="currentQuest">

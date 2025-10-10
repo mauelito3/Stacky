@@ -1,200 +1,184 @@
 export const questions = [
   {
     id: 1,
-    text: "Do you enjoy working on the design and security of a webpage?",
+    text: "Do you enjoy working on the design and visual layout of a webpage?",
     options: [
-      { answer: "Yes, a lot", points: { fullstack: 2 } },
-      { answer: "Not really", points: { frontend: 2 } },
-      { answer: "Both", points: { fullstack: 2 } },
+      { answer: "Yes, I love making things look good", points: { frontend: 2, mobile: 1 } },
+      { answer: "I prefer focusing on functionality", points: { backend: 2 } },
+      { answer: "I enjoy both aspects", points: { fullstack: 2 } },
     ],
   },
-
   {
     id: 2,
-    text: "How do you feel about math and algorithms?",
+    text: "How do you feel about logic puzzles and algorithms?",
     options: [
-      {
-        answer: "I enjoy them, I like solving difficult problems",
-        points: { backend: 2 },
-      },
-      {
-        answer: "Not my strong suit, I prefer more creative tasks",
-        points: { frontend: 2 },
-      },
-      {
-        answer: "I can handle them if needed",
-        points: { fullstack: 2 },
-      },
+      { answer: "I enjoy them, I like solving complex problems", points: { backend: 2 } },
+      { answer: "Not my strong suit, I prefer more creative tasks", points: { frontend: 2 } },
+      { answer: "I can handle them when needed", points: { fullstack: 2, mobile: 1 } },
     ],
   },
-
   {
     id: 3,
-    text: "If you were given a project, would you start with the database schema or the UI mockup?",
+    text: "When starting a new project, what are you more excited about?",
     options: [
-      { answer: "Database schema", points: { backend: 2 } },
-      { answer: "UI mockup", points: { frontend: 2 } },
-      { answer: "No preference", points: { fullstack: 2 } },
+      { answer: "Designing the database schema", points: { backend: 2 } },
+      { answer: "Creating the user interface mockup", points: { frontend: 2, mobile: 2 } },
+      { answer: "Planning the entire application architecture", points: { fullstack: 2, devops: 1 } },
     ],
   },
-
   {
     id: 4,
-    text: "Are you interested in learning how protocols work (HTTP, WebSockets, etc.)?",
+    text: "Are you interested in how servers and networks work (e.g., HTTP, APIs)?",
     options: [
-      { answer: "Yes, I’m very interested", points: { backend: 2 } },
-      { answer: "No thanks, I’ll pass", points: { frontend: 2 } },
-      { answer: "I can if necessary", points: { fullstack: 2 } },
+      { answer: "Yes, I find it fascinating", points: { backend: 2, devops: 1 } },
+      { answer: "No, I'd rather not deal with that", points: { frontend: 2 } },
+      { answer: "I'm curious but it's not my main focus", points: { fullstack: 2 } },
     ],
   },
-
   {
     id: 5,
-    text: "Would you like to create animations and interactive interfaces?",
+    text: "Do you like the idea of creating smooth animations and interactive elements?",
     options: [
-      { answer: "Yes", points: { frontend: 2 } },
-      { answer: "No", points: { backend: 2 } },
-      { answer: "I like both", points: { fullstack: 2 } },
+      { answer: "Absolutely, that's my favorite part!", points: { frontend: 2, mobile: 2 } },
+      { answer: "No, I'm more into data processing", points: { backend: 2 } },
+      { answer: "It's cool, I'd like to do both", points: { fullstack: 2 } },
     ],
   },
-
   {
     id: 6,
-    text: "Do you prefer optimizing a server’s performance or a website’s loading speed?",
+    text: "Which task sounds more appealing?",
     options: [
-      { answer: "Server performance", points: { backend: 2 } },
-      { answer: "Website loading speed", points: { frontend: 2 } },
-      { answer: "Both", points: { fullstack: 2 } },
+      { answer: "Optimizing a server for high performance", points: { backend: 2, devops: 2 } },
+      { answer: "Making a website load instantly", points: { frontend: 2, mobile: 1 } },
+      { answer: "Both sound like interesting challenges", points: { fullstack: 2 } },
     ],
   },
-
   {
     id: 7,
-    text: "If you had to choose, would you work with CSS & JS libraries or with SQL & Node.js?",
+    text: "Which technology stack would you prefer to master?",
     options: [
-      { answer: "CSS & JS libraries", points: { frontend: 2 } },
-      { answer: "SQL & Node.js", points: { backend: 2 } },
-      { answer: "Both are interesting", points: { fullstack: 2 } },
+      { answer: "React, Vue, and CSS frameworks", points: { frontend: 2 } },
+      { answer: "Node.js, Python, and SQL/NoSQL databases", points: { backend: 2 } },
+      { answer: "I want to be proficient in both", points: { fullstack: 2 } },
     ],
   },
-
   {
     id: 8,
-    text: "Do you enjoy working with databases?",
+    text: "How do you feel about working with large databases?",
     options: [
-      { answer: "Yes, very much", points: { backend: 2 } },
-      { answer: "No, not for me", points: { frontend: 2 } },
-      { answer: "I can if necessary", points: { fullstack: 2 } },
+      { answer: "I find it very interesting", points: { backend: 2 } },
+      { answer: "I'd prefer to avoid it", points: { frontend: 2 } },
+      { answer: "I don't mind it as part of a larger project", points: { fullstack: 2, mobile: 1 } },
     ],
   },
-
-  {
+    {
     id: 9,
-    text: "You’re working at a company and they ask you to learn Java, what do you do?",
+    text: "Are you interested in automating application deployments and managing cloud infrastructure?",
     options: [
-      {
-        answer: "I would seriously consider it",
-        points: { backend: 2, fullstack: 2 },
-      },
-      {
-        answer: "I’d pack my things and leave",
-        points: { frontend: 2 },
-      },
+      { answer: "Yes, that sounds powerful and efficient!", points: { devops: 2 } },
+      { answer: "No, I'd rather focus on coding new features.", points: { frontend: 1, backend: 1, mobile: 1 } },
+      { answer: "I'm open to it if the job requires it.", points: { fullstack: 1 } },
     ],
   },
-
   {
     id: 10,
-    text: "Do you feel more comfortable with colors, fonts and layouts, or with queries and algorithms?",
+    text: "Would you prefer to build an application for a web browser or for a mobile phone?",
     options: [
-      { answer: "Mainly with UI/UX", points: { frontend: 2 } },
-      {
-        answer: "I love algorithms and queries",
-        points: { backend: 2 },
-      },
-      { answer: "I can work with both", points: { fullstack: 2 } },
+        { answer: "A mobile phone (iOS/Android)", points: { mobile: 2 } },
+        { answer: "A web browser", points: { frontend: 1, backend: 1, fullstack: 1 } },
+        { answer: "I'm excited by the challenge of building for both.", points: { fullstack: 2, mobile: 1 } },
     ],
   },
 
+  // --- New Questions ---
   {
     id: 11,
-    text: "Do you prefer solving problems related to data and logic?",
+    text: "When you encounter a bug, what's your first instinct?",
     options: [
-      { answer: "Yes, definitely", points: { backend: 2 } },
-      { answer: "No, I find it boring", points: { frontend: 2 } },
-      { answer: "I can if needed", points: { fullstack: 2 } },
+      { answer: "Check the browser's developer console for visual errors", points: { frontend: 2 } },
+      { answer: "Look through server logs and database queries", points: { backend: 2, devops: 1 } },
+      { answer: "Systematically check both the client and server side", points: { fullstack: 2 } },
     ],
   },
-
   {
     id: 12,
-    text: "Are you more interested in responsive design or scalability?",
+    text: "How important is pixel-perfect design to you?",
     options: [
-      { answer: "Responsive design", points: { frontend: 2 } },
-      { answer: "Scalability", points: { backend: 2 } },
-      { answer: "Both", points: { fullstack: 2 } },
+      { answer: "Extremely important. I want it to look exactly like the mockup", points: { frontend: 2, mobile: 2 } },
+      { answer: "Functionality is more important than perfect visuals", points: { backend: 2 } },
+      { answer: "It's important, but I'm willing to make compromises", points: { fullstack: 1 } },
     ],
   },
-
   {
     id: 13,
-    text: "Do you get more excited about building dashboards & UIs or authentication systems & APIs?",
+    text: "Do you enjoy setting up and configuring development environments?",
     options: [
-      { answer: "Dashboards & UIs", points: { frontend: 2 } },
-      { answer: "Authentication & APIs", points: { backend: 2 } },
-      { answer: "Both", points: { fullstack: 2 } },
+        { answer: "Yes, I like making sure everything is set up perfectly", points: { devops: 2, backend: 1 } },
+        { answer: "No, I just want to start coding", points: { frontend: 1 } },
+        { answer: "I can do it, but it's not my favorite task", points: { fullstack: 1, mobile: 1 } },
     ],
   },
-
   {
     id: 14,
-    text: "Do you feel closer to the mindset of ‘making things look good’ or ‘making things work reliably’?",
+    text: "What kind of team do you prefer to work in?",
     options: [
-      { answer: "Making them look good", points: { frontend: 2 } },
-      { answer: "Making them work reliably", points: { backend: 2 } },
-      { answer: "Both", points: { fullstack: 2 } },
+      { answer: "A team of designers and UX specialists", points: { frontend: 2 } },
+      { answer: "A team of data architects and system administrators", points: { backend: 2, devops: 1 } },
+      { answer: "A cross-functional team where I can do a bit of everything", points: { fullstack: 2 } },
     ],
   },
-
   {
     id: 15,
-    text: "Do you enjoy working with visible code (React, Vue) or with APIs and servers?",
+    text: "Which statement resonates with you more?",
     options: [
-      { answer: "I’d prefer React.js + Vue.js", points: { frontend: 2 } },
-      {
-        answer: "I prefer building APIs and servers",
-        points: { backend: 2 },
-      },
-      { answer: "Both", points: { fullstack: 2 } },
+      { answer: "I want to build what the user sees.", points: { frontend: 2, mobile: 2 } },
+      { answer: "I want to build the engine that makes it all work.", points: { backend: 2 } },
+      { answer: "I want to see the whole system come to life.", points: { fullstack: 2 } },
     ],
   },
-
   {
     id: 16,
-    text: "Would it bother you to tweak buttons, layouts, and colors for an entire 8-hour shift?",
+    text: "Are you interested in the performance of a device's battery life and memory usage?",
     options: [
-      { answer: "I’d do it gladly", points: { frontend: 2 } },
-      { answer: "I’d delegate it to someone else", points: { backend: 2 } },
-      { answer: "I’d do it if no one else could", points: { fullstack: 2 } },
+        { answer: "Yes, optimizing for mobile hardware is a key challenge", points: { mobile: 2 } },
+        { answer: "Not really, I'm more focused on web performance", points: { frontend: 1, backend: 1 } },
+        { answer: "It's an interesting factor to consider", points: { fullstack: 1 } },
     ],
   },
-
   {
     id: 17,
-    text: "Do you like seeing how users interact with your UI?",
+    text: "Do you enjoy writing scripts to automate repetitive tasks?",
     options: [
-      { answer: "Yes", points: { frontend: 2 } },
-      { answer: "Not particularly", points: { backend: 2 } },
-      { answer: "I don’t mind", points: { fullstack: 2 } },
+        { answer: "Yes, I love finding ways to be more efficient", points: { devops: 2, backend: 1 } },
+        { answer: "No, I prefer to do things manually", points: { frontend: 1 } },
+        { answer: "It depends on the task", points: { fullstack: 1 } },
     ],
   },
-
   {
     id: 18,
-    text: "Do you enjoy building LLMs and AI bots?",
+    text: "How do you feel about working with platform-specific guidelines (e.g., Apple's Human Interface Guidelines or Google's Material Design)?",
     options: [
-      { answer: "Yes, I like it", points: { backend: 2, fullstack: 2 } },
-      { answer: "Not at all", points: { frontend: 2 } },
+        { answer: "I enjoy following them to create a native feel", points: { mobile: 2, frontend: 1 } },
+        { answer: "I find them too restrictive", points: { backend: 1 } },
+        { answer: "They are useful guides, but not absolute rules", points: { fullstack: 1 } },
+    ],
+  },
+  {
+    id: 19,
+    text: "Which of these tasks would you find most satisfying?",
+    options: [
+      { answer: "Building a secure and reliable user authentication system", points: { backend: 2 } },
+      { answer: "Creating a seamless and intuitive user onboarding experience", points: { frontend: 2, mobile: 1 } },
+      { answer: "Setting up a continuous integration/continuous deployment (CI/CD) pipeline", points: { devops: 2 } },
+    ],
+  },
+  {
+    id: 20,
+    text: "What is your ultimate goal as a developer?",
+    options: [
+      { answer: "To create beautiful and user-friendly applications", points: { frontend: 2, mobile: 1 } },
+      { answer: "To build robust and scalable systems", points: { backend: 2, devops: 1 } },
+      { answer: "To be able to build any application from start to finish", points: { fullstack: 2 } },
     ],
   },
 ];

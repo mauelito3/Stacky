@@ -6,10 +6,11 @@ export function useStacky(questions) {
     frontend: 0,
     backend: 0,
     fullstack: 0,
+    devops: 0,
+    mobile: 0,
   });
 
   const [finished, setFinished] = useState(false);
-
 
   // submit answer handler
   const handleAnswer = (points) => {
@@ -17,6 +18,8 @@ export function useStacky(questions) {
       frontend: prev.frontend + (points.frontend || 0),
       backend: prev.backend + (points.backend || 0),
       fullstack: prev.fullstack + (points.fullstack || 0),
+      devops: prev.devops + (points.devops || 0),
+      mobile: prev.mobile + (points.mobile || 0),
     }));
 
     if (currentQ + 1 < questions.length) {
@@ -28,15 +31,30 @@ export function useStacky(questions) {
 
   const restart = () => {
     setCurrentQ(0);
-    setScores({ frontend: 0, backend: 0, fullstack: 0 });
+    setScores({ frontend: 0, backend: 0, fullstack: 0, devops: 0, mobile: 0 });
     setFinished(false);
   };
 
+  const getWinningRole = () => {
+    return Object.entries(scores).reduce((a, b) => (a[1] > b[1] ? a : b))[0];
+  };
+
   const getResult = () => {
-    const max = Math.max(scores.frontend, scores.backend, scores.fullstack);
-    if (max === scores.frontend) return "You are a Frontend Guy!";
-    if (max === scores.backend) return "You are Backend Guy!";
-    return "You are Fullstack Guy!";
+    const role = getWinningRole();
+    if (role === "frontend") return "You are a Frontend Guy!";
+    if (role === "backend") return "You are a Backend Guy!";
+    if (role === "fullstack") return "You are a Fullstack Guy!";
+    if (role === "devops") return "You are a DevOps Guy!";
+    if (role === "mobile") return "You are a Mobile Dev Guy!";
+  };
+
+  const getMessage = () => {
+    const role = getWinningRole();
+    if (role === "frontend") return "You have a keen eye for design and user experience. Frontend development is your forte!";
+    if (role === "backend") return "You excel at problem-solving and building robust systems. Backend development suits you well!";
+    if (role === "fullstack") return "You are versatile and enjoy working on both the client and server sides. Fullstack development is your strength!";
+    if (role === "devops") return "You have a knack for infrastructure and automation. DevOps is the perfect fit for you!";
+    if (role === "mobile") return "You love creating mobile applications that users can enjoy on the go. App development is your passion!";
   };
 
   return {
@@ -46,5 +64,6 @@ export function useStacky(questions) {
     handleAnswer,
     restart,
     getResult,
+    getMessage,
   };
 }
