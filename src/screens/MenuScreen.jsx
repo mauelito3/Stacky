@@ -1,4 +1,3 @@
-// components
 import Logo from "../components/Logo";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
