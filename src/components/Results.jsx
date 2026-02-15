@@ -1,29 +1,25 @@
 import Button from "../components/Button";
+import { useQuizStore } from "../store/quizStore";
 
-function Results({ finished, result, restart }) {
+function Results() {
+  const { finished, getResult, getMessage, restart } = useQuizStore();
+
   if (!finished) return null;
-
-  const replay = () => {
-    restart()
-  };
 
   return (
     <>
       <div className="overlay"></div>
       <div className="results">
-        <div style={{ marginTop: 20 }}>
-          <div className="party"></div>
-        </div>
-
-        {/* results message  */}
-        <div style={{ textAlign: "center", lineHeight: 2 }}>
+        <div style={{ textAlign: "center", lineHeight: 2, marginTop: 20 }}>
           <div style={{ fontSize: 25, fontWeight: 700 }}>Congrats</div>
-          <div style={{ fontSize: 18, fontWeight: 500 }}>{result}</div>
+          <div style={{ fontSize: 18, fontWeight: 500 }}>{getResult()}</div>
+          <div style={{ fontSize: 14, fontWeight: 400, marginTop: 10 }}>
+            {getMessage()}
+          </div>
         </div>
 
-        {/* buttons  */}
-        <div style={{ width: 200, height: 100, marginTop: 50 }}>
-          <Button text={"Star Over"} callback={replay} />
+        <div style={{ width: 200, height: 100, marginTop: 30, marginBottom: 20 }}>
+          <Button text={"Start Over"} callback={restart} />
         </div>
       </div>
     </>
